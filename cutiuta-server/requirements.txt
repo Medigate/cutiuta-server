@@ -8,7 +8,6 @@ docutils==0.12
 gunicorn==19.4.5
 Mako==1.0.4
 Pillow==3.1.1
-pygobject==3.18.2
 scons==2.4.1
 vboxapi==1.0
 virtualenv==13.1.2
