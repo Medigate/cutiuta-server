@@ -1,11 +1,12 @@
 from django.contrib.auth.models import User, Group
+from prima.jurnal.models import Pacient
 from rest_framework import serializers
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class PacientSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = User
-        fields = ('url', 'username','email', 'groups')
+        model = Pacient
+        fields = ('url', 'user','unitate_masura', 'valoare_max', 'valoare_min', 'perioada_raportare', 'categorie', 'telefon')
 
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
